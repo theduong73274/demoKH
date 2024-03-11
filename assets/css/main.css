@@ -221,12 +221,18 @@ body::-webkit-scrollbar {
       font-family: "Vampire"; }
   .banner .section-three {
     align-items: flex-start; }
+  .banner-social__one {
+    opacity: 1; }
   .banner-social__two {
-    display: none; }
-  .banner-social.active .banner-social__one {
-    display: none; }
-  .banner-social.active .banner-social__two {
-    display: block; }
+    opacity: 0; }
+  .banner-social.active {
+    transition: all 1.2s; }
+    .banner-social.active .banner-social__one {
+      transition: opacity 1s ease;
+      opacity: 0; }
+    .banner-social.active .banner-social__two {
+      transition: opacity 1s ease;
+      opacity: 1; }
   .banner .notched-corner {
     clip-path: polygon(0% 20px, 20px 0%, calc(100% - 20px) 0%, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0 calc(100% - 20px)); }
   .banner .notched-corner-sm {

@@ -42,20 +42,27 @@
 
     &-social {
         &__one {
+            opacity: 1;
         }
 
         &__two {
-            display: none;
+            opacity: 0;
         }
 
         &.active {
+            transition: all 1.2s;
+
             .banner-social {
                 &__one {
-                    display: none;
+                    transition: opacity 1s ease;
+                    opacity: 0;
+                    // display: none;
                 }
 
                 &__two {
-                    display: block;
+                    transition: opacity 1s ease;
+                    opacity: 1;
+                    // display: block;
                 }
             }
         }

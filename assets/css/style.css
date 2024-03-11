@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Vampire";
+  src: url("../fonts/vampire_wars/Vampire\ Wars.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "VampireItalic";
+  src: url("../fonts/vampire_wars/Vampire\ Wars\ Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "ArtifaktElement";
+  src: url("../fonts/ArtifaktElement-Regular.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ArtifaktElement", sans-serif;
+  color: white;
+  scroll-behavior: smooth;
+  z-index: 20;
+}
+
+/* Hide scroll bar for all elements */
+::-webkit-scrollbar {
+  display: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.font-vampire {
+  font-family: Vampire;
+}
+
+.section-1 {
+  background: url("/assets/img/logo.jpg");
+  z-index: 1;
+}
+
+.section-wrapper {
+  min-height: 100vh;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.bg-blue {
+  background-color: #1718b1;
+}
+
+.border-red {
+  border: 2px solid #c20200;
+}
+
+.text-yellow {
+  color: #ffd741;
+}
+
+.text-red {
+  color: #c20200;
+}
+/* animation text */
+
+.notched-corner {
+  clip-path: polygon(
+    0% 20px,
+    /* top left */ 20px 0%,
+    /* top left */ calc(100% - 20px) 0%,
+    /* top right */ 100% 20px,
+    /* top right */ 100% calc(100% - 20px),
+    /* bottom right */ calc(100% - 20px) 100%,
+    /* bottom right */ 20px 100%,
+    /* bottom left */ 0 calc(100% - 20px) /* bottom left */
+  );
+}
+
+.notched-corner-sm {
+  clip-path: polygon(
+    0% 15px,
+    /* top left */ 15px 0%,
+    /* top left */ calc(100% - 15px) 0%,
+    /* top right */ 100% 15px,
+    /* top right */ 100% calc(100% - 15px),
+    /* bottom right */ calc(100% - 15px) 100%,
+    /* bottom right */ 15px 100%,
+    /* bottom left */ 0 calc(100% - 15px) /* bottom left */
+  );
+}
+
+.text-purple {
+  color: rgb(66, 12, 113);
+}
+
+.wow {
+  visibility: hidden;
+}

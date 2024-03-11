@@ -1,0 +1,22 @@
+{
+  "name": "aurelion-sol-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sasstocss": "node-sass assets/sass/style.scss assets/css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theduong73274/demoKH.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theduong73274/demoKH/issues"
+  },
+  "homepage": "https://github.com/theduong73274/demoKH#readme",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

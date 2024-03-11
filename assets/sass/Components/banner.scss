@@ -1,0 +1,94 @@
+.banner {
+    height: 100vh;
+
+    &-slide {
+        width: 100%;
+        height: 100%;
+
+        &__item {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide {
+            transition: opacity 0.5s ease;
+            opacity: 0 !important;
+
+            &-active {
+                opacity: 1 !important;
+            }
+        }
+    }
+
+    .section {
+        &-one {
+            justify-content: flex-start;
+        }
+
+        &-two {
+            align-items: flex-start;
+            &__title {
+                font-family: $font-sub;
+            }
+        }
+
+        &-three {
+            align-items: flex-start;
+        }
+    }
+
+    &-social {
+        &__one {
+        }
+
+        &__two {
+            display: none;
+        }
+
+        &.active {
+            .banner-social {
+                &__one {
+                    display: none;
+                }
+
+                &__two {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    // .section-1 {
+    //     background: url("/assets/img/logo.jpg");
+    //     z-index: 1;
+    // }
+
+    .notched-corner {
+        clip-path: polygon(
+            0% 20px,
+            /* top left */ 20px 0%,
+            /* top left */ calc(100% - 20px) 0%,
+            /* top right */ 100% 20px,
+            /* top right */ 100% calc(100% - 20px),
+            /* bottom right */ calc(100% - 20px) 100%,
+            /* bottom right */ 20px 100%,
+            /* bottom left */ 0 calc(100% - 20px) /* bottom left */
+        );
+    }
+
+    .notched-corner-sm {
+        clip-path: polygon(
+            0% 15px,
+            /* top left */ 15px 0%,
+            /* top left */ calc(100% - 15px) 0%,
+            /* top right */ 100% 15px,
+            /* top right */ 100% calc(100% - 15px),
+            /* bottom right */ calc(100% - 15px) 100%,
+            /* bottom right */ 15px 100%,
+            /* bottom left */ 0 calc(100% - 15px) /* bottom left */
+        );
+    }
+}

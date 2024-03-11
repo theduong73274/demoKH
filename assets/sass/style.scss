@@ -1,0 +1,10 @@
+// ================= SCSS SetUp =================
+@import "./SetUpBase/variables";
+@import "./SetUpBase/reset";
+@import "./SetUpBase/mixin";
+@import "./SetUpBase/mixinResponsive";
+@import "./SetUpBase/base";
+
+// ================= SCSS General =================
+// @import "./Layout/header";
+@import "./Components/banner.scss";

@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "Vampire";
+    src: url("/assets/fonts/vampire_wars/Vampire_Wars.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "VampireItalic";
+    src: url("/assets/fonts/vampire_wars/Vampire_Wars_Italic.ttf") format("truetype");
+}
+@font-face {
+    font-family: "ArtifaktElement";
+    src: url("../fonts/ArtifaktElement-Regular.ttf") format("truetype");
+}
+
+$font-main: "ArtifaktElement", sans-serif;
+$font-sub: "Vampire";
+
+// ======================== Color Main ========================
+$color-main: #e40019;
+$color-sub: #f32b4f;
+$color-title: #373737;
+$color-desc: #707070;
+
+// ======================== Back color ========================
+$border-color: #e8e8e8;
